@@ -6,15 +6,44 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <script>
+        function teste() {
+            alert("oi");
+    
+        }
+        function mensagem(){
+            console.log("Teste");
+        }
+        function validar(){
+//enviou dados
+            let nome = document.getElementeById("nome").value;
+//erro
+            if (nome == ""){
+                return false;
+            }
+            else{
+//ok
+                return true;
+            }
+
+        } 
+// innerHTML permite incerir html em div e eoutos lugares
+
+//.focus(); volta para caixa não prenida
+    </script>
+    <form onsubmit=" return validar">
+
         nome: <br>
          <input type="text" name="nome" id="nome">  <br><br>
 
          sobrenome: <br>
          <input type="text" namr="sobrenome" id="sobrenome"> <br><br>
+         Senha: <br>
+         <input type="password" name="senha" id="senha">
 
-         <input type="submit" value="Salvar">
+         <input type="submit" id="senha" value="Salvar">
     </form>
     
 </body>
 </html>
+<!-- <form onsubmit=" return validar"> funcina para retornar, parando o processo de envio -->
