@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        numero1 <br>
+        <input type="text" name="" id="nome"><br>
+        numero2 <br>
+        <input type="text" name="" id="numeroconta"><br>
+        <button onclick="teste()">somar</button>
+        <button onclick="teste1()">subitair</button>
+        <button onclick="teste2()">multiplicar</button>
+        <button onclick="teste3()">dividir</button>
+    </form> 
+    <script>
+        //cod fonte tv
+        //parseFloat número com (.) virgula não funciona 
+        //se o valor estiver fora do function não sera lido
+        function teste() {
+            let nome = document.getElementById("nome").value; 
+            let numeroconta = document.getElementById("numeroconta").value; 
+            console.log(parseInt(nome) + parseInt(numeroconta)); 
+        }
+        function teste1() {
+            let nome = document.getElementById("nome").value; 
+            let numeroconta = document.getElementById("numeroconta").value; 
+            console.log(nome - numeroconta); 
+
+        }
+        function teste2() {
+            let nome = document.getElementById("nome").value; 
+            let numeroconta = document.getElementById("numeroconta").value; 
+            console.log(nome * numeroconta);
+
+        }
+        function teste3() {
+            let nome = document.getElementById("nome").value; 
+            let numeroconta = document.getElementById("numeroconta").value; 
+            console.log(nome / numeroconta);
+        }
+       
+    </script>
+</body>
+</html>
